@@ -1,0 +1,86 @@
+
+body{
+    background: #4158d0;
+    background-image: linear-gradient(90deg, #c6ffdd, #fbd786, #f7797d);
+    background-size: 100% 100%;
+}
+.main{
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(2px);
+    border-radius: 25px;
+}
+.input{
+    outline: none;
+    background: transparent;
+    
+
+}
+input{
+    outline: none;
+    background: transparent;
+   border: none; 
+border-bottom: 2px solid dodgerblue;
+width: 100%;
+position: relative;
+bottom: 0px;
+}
+.form-group{
+    height: 70px;
+}
+label{
+    position: relative;
+    font-size: 18px;
+    color: rgba(58, 58,58);
+    top: 32px;
+    left: 5px;
+    transition: .3s;
+    z-index: -1;
+}
+.label-selected{
+    position: relative;
+    font-size: 13px;
+    color: rgba(82,82,82);
+    top: 5px;
+    left: 5px;
+}
+button{
+    border: none;
+    background: dodgerblue;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px;
+    width: 100px;
+    border-radius: 30px;
+    margin-left: 75%;
+    transition: .5s;
+    transform: translate(0px, 0px);
+}
+button:hover{
+    box-shadow: 0px 8px 15px -10px rgb(61,61,61);
+    transform: translate(0px, -3px);
+}
+links{
+    font-size: 14px;
+color: rgb(3,48,197);
+}
+#overlay{
+    background: #fff;
+    height: 570px;
+    width: 600px;
+    position: absolute;
+    transform: translate(0px, -25);
+    border-radius: 25px;
+    background-image: url(images/overlay1.jpeg);
+    transition: .5s;
+}
+@media only screen and (max-width: 600px){
+    body{
+        background: lightblue;
+    }
+    #overlay , #signUp{
+        display: none;
+    }
+    button{
+        margin-left: 65%;
+    }
+}
